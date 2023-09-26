@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calcu.css">
+    <title>calculator</title>
+</head>
+<body>
+    <h1 style="margin: 50px 550px;">ANAM'S first calculator❤️</h1>
+    <div id="body">
+        <div >
+            <input id="screen" type="text">
+        </div>
+        <button class="btn" id="plus">+</button>
+        <button class="btn" id="minus">-</button>
+        <button class="btn" id="gun">*</button>
+        <button class="btn" id="vag">/</button>
+        <button class="btn" id="vagsesh">%</button>
+        <br>
+        <button class="btn" id="equal">=</button>
+        <button class="btn" id="ac">AC</button>
+        <br>
+        <button class="btn" id="one">1</button>
+        <button class="btn" id="two">2</button>
+        <button class="btn" id="three">3</button>
+        <button class="btn" id="four">4</button>
+        <button class="btn" id="five">5</button>
+        <br>
+        <button class="btn" id="six">6</button>
+        <button class="btn" id="seven">7</button>
+        <button class="btn" id="eight">8</button>
+        <button class="btn" id="nine">9</button>
+        <button class="btn" id="zero">0</button>
+
+    </div>
+
+
+
+    <script>
+        var input = document.getElementById('plus');
+        var click = input.addEventListener('click',function () {
+           var value =  document.getElementById('screen').value ;
+           var inputValue = value + '+';
+           document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('minus');
+        var click = input.addEventListener('click',function () {
+           var value =  document.getElementById('screen').value ;
+           var inputValue = value + '-';
+           document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('gun');
+        var click = input.addEventListener('click',function () {
+           var value =  document.getElementById('screen').value ;
+           var inputValue = value + '*';
+           document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('vag');
+        var click = input.addEventListener('click',function () {
+           var value =  document.getElementById('screen').value ;
+           var inputValue = value + '/';
+           document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('vagsesh');
+        var click = input.addEventListener('click',function () {
+           var value =  document.getElementById('screen').value ;
+           var inputValue = value + '%';
+           document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('ac');
+        var click = input.addEventListener('click',function () {
+           document.getElementById('screen').value = '';
+        });
+
+
+
+
+
+
+        var input = document.getElementById('one');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 1;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('two');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 2;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('three');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 3;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('four');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 4;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('five');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 5;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('six');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 6;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('seven');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 7;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('eight');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 8;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('nine');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 9;
+             document.getElementById('screen').value = inputValue;
+        });
+        var input = document.getElementById('zero');
+        var click = input.addEventListener('click',function () {
+             var value = document.getElementById('screen').value;
+             var inputValue = value + 0;
+             document.getElementById('screen').value = inputValue;
+        });
+
+
+
+        var equal = document.getElementById('equal');
+        var click = equal.addEventListener('click',function () {
+        var collectProblem =document.getElementById('screen').value;
+        var solve = eval(collectProblem);
+        document.getElementById('screen').value = solve;
+        });
+    </script>
+</body>
+</html>
